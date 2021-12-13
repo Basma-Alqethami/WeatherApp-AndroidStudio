@@ -122,7 +122,7 @@
                 android:id="@+id/sunriseImage"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                tools:srcCompat="@drawable/sunrise" />
+                android:src="@drawable/sunrise" />
 
             <TextView
                 android:id="@+id/Sunrise"
@@ -155,7 +155,7 @@
                 android:id="@+id/sunsetImage"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                tools:srcCompat="@drawable/sunset" />
+                android:src="@drawable/sunset" />
 
             <TextView
                 android:id="@+id/sunset"
@@ -188,7 +188,7 @@
                 android:id="@+id/windImage"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                tools:srcCompat="@drawable/wind" />
+                android:src="@drawable/wind" />
 
             <TextView
                 android:id="@+id/wind"
@@ -221,7 +221,8 @@
                 android:id="@+id/pressureImage"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                tools:srcCompat="@drawable/pressure" />
+                android:baselineAligned="false"
+                android:src="@drawable/pressure"/>
 
             <TextView
                 android:id="@+id/pressure"
@@ -254,7 +255,7 @@
                 android:id="@+id/humidityImage"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                tools:srcCompat="@drawable/humidity" />
+                android:src="@drawable/humidity" />
 
             <TextView
                 android:id="@+id/humidity"
@@ -288,7 +289,7 @@
                 android:id="@+id/refreshImage"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                tools:srcCompat="@drawable/ic_baseline_refresh_24" />
+                android:src="@drawable/ic_baseline_refresh_24" />
 
             <TextView
                 android:id="@+id/refresh"
@@ -316,7 +317,7 @@
         android:layout_height="match_parent"
         android:padding="20dp"
         android:background="#EDEBEB"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:orientation="vertical"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -348,7 +349,7 @@
                 android:layout_margin="10dp"
                 android:backgroundTint="#00006C"
                 android:textColor="@color/white"
-                android:text="Submit" />
+                android:text="Ok" />
 
             <Button
                 android:id="@+id/btnCancel"
@@ -360,6 +361,56 @@
                 android:text="Cancel" />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/someId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="ID of some cities"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Makkah al Mukarramah : 104515 "
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Riyadh : 108410"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dubai : 292223"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New York : 5128581"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tokyo : 1850147"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paris : 2988507"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="London : 2643743"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
