@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
                     Log.d("MAIN", "$data")
                 } else {
                     withContext(Main) {
-                        showAlert("the zip code does not exist or wrong")
+                        showAlert("wrong id or does not exist.")
                     }
                 }
             }catch (e: Exception)
@@ -134,7 +134,7 @@ class MainActivity : AppCompatActivity() {
             try {
 
                 val jsonObject = JSONObject(result)
-                var name = jsonObject.getString("name") +" "+ jsonObject.getJSONObject("sys").getString("country")
+                var name = jsonObject.getString("name") +", "+ jsonObject.getJSONObject("sys").getString("country")
                 var timezone = jsonObject.getInt("timezone")
                 updateTime (timezone.toString())
 
